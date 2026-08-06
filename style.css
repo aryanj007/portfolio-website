@@ -426,3 +426,35 @@ nav ul li a:hover::after{
 .contact-form button:hover{
     background:#9d6bff;
 }
+
+/*===== Footer ======*/
+
+footer{
+    padding:50px 10%;
+    background:#0f172a;
+    text-align:center;
+    border-top:1px solid rgba(139,92,246,0.3);
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+.footer-links a{
+    text-decoration:none;
+    color:#8b5cf6;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.footer-links a:hover{
+    color:white;
+    text-shadow: 0 0 10px #8b5cf6;
+}
+
+.contact-form button:hover{
+    transform:translateY(-3px);
+    box-shadow: 0 10px 20px rgba(139,92,246,0.4);
+}
