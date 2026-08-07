@@ -167,6 +167,30 @@ nav ul li a:hover::after{
     box-shadow:0 0 60px rgba(139, 92, 246, 0.6);
 }
 
+.resume-btn{
+    display:inline-block;
+    padding:12px 24px;
+    margin-left:15px;
+
+    background:transparent;
+    color:#8b5cf6;
+
+    border:2px solid #8b5cf6;
+    border-radius:8px;
+
+    text-decoration:none;
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.resume-btn:hover{
+    background:#8b5cf6;
+    color:white;
+    transform:translate(-5px);
+    box-shadow:0 10px 20px rgba (139,92,246,0.35);
+}
+
 /*======About Styling======*/
 
 #about{
