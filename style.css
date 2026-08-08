@@ -19,7 +19,7 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-
+    
     padding:20px 10%;
 }
 
@@ -33,6 +33,7 @@ nav{
     font-size:30px;
     font-weight:bold;
     color:#8b5cf6;
+    margin-right:40px;
 
     cursor:pointer;
     transition:0.3s;
@@ -276,6 +277,12 @@ nav ul li a:hover::after{
     font-size:17px;
 }
 
+.info-box:last-child{
+    grid-column:1/-1;
+    width:50%;
+    justify-self:center;
+}
+
 /* ========== Skills Section ========== */
 
 #skills{
@@ -403,6 +410,23 @@ nav ul li a:hover::after{
     background:#6d28d9;
 }
 
+.project-tech{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:20px 0;
+    justify-content:center;
+}
+
+.project-tech span{
+    background:#0f172a;
+    color:#ffffff;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:600;
+}
+
 /*======== Contact Section ========*/
 
 #contact{
@@ -486,4 +510,131 @@ footer{
 .contact-form button:hover{
     transform:translateY(-3px);
     box-shadow: 0 10px 20px rgba(139,92,246,0.4);
+}
+
+/* ======== Mobile Responsive ========= */
+
+@media(max-width:600px){
+
+    /* ==== Mobile / Hero ==== */
+    #hero{
+        flex-direction:column;
+        text-align:center;
+        padding:60px 20px;
+    }
+
+    .hero-content{
+        width:100%;
+    }
+
+    .hero-image{
+        width:100%;
+        margin-top:30px;
+    }
+
+    .hero-image img{
+        max-width:100%;
+        height:auto;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    header {
+        padding: 15px 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }  
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* ==== Mobile About ==== */
+    #about{
+        padding:60px 20px;
+        flex-direction:column;
+    }
+
+    .about-image{
+        width:100%;
+        text-align:center;
+    }
+
+    .about-image img{
+        width:100%;
+        max-width:100%;
+        height:auto;
+    }
+
+    .about-content{
+        width:100%;
+    }
+
+    .about-info{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+    .info-box{
+        width:100;
+    }
+
+    .info-box:last-child{
+        width:100%;
+        justify-self:stretch;
+    }
+
+    /* ==== Mobile Skills ==== */
+
+    #skills{
+        padding:60px 20px;
+    }
+
+    .section-title{
+        font-size:34px;
+    }
+
+    .section-description{
+        font-size:17px;
+        margin-bottom:40px;
+    }
+
+    .skills-container{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .skill-card{
+        padding:25px;
+    }
+
+    .skill-card h3{
+        font-size:22px;
+    }
+
+    /* ==== Mobile Projects ==== */
+
+    #projects{
+        padding:60px 20px;
+    }
+
+    .projects-container{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .project-card{
+        width:100%;
+    }
+
 }
